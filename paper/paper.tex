@@ -1,0 +1,58 @@
+\documentclass{article}
+
+%Vamos importar um pacote
+\usepackage[brazil]{babel}
+
+%Corpo
+% Onde a gente escreve o texto
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Análise da variação de temperatura dos últimos cinco anos}
+\author{Eric Frota de Sousa}
+
+%Cria o título
+\maketitle
+
+\begin{abstract}
+Meu resumo!
+\end{abstract}
+
+\section{Introdução}
+Isso vai ser a inha introdução.
+Outra frase.
+
+Esse já é outro parágrafo.
+
+\section{Metodologia}
+\label{sec:metodos}
+
+Aqui vou descrever tudo o que eu fiz.
+Ajustamos uma reta aos cinco últimos anos dos dados
+de emperatura média mensal para cada país.
+Assim calculamos a taza de variação de temperatura recente.
+
+
+
+\begin{equation}
+y = \int\Omega x dx
+\end{equation}
+
+A equação da reta é
+
+\begin{equation}
+T(t) = a t + b,
+\label{eq:reta}
+\end{equation}
+
+\noindent
+onde $T$ é a temperatura , $t$ é o tempo, $a$ é o coeficiente angular
+e $b$ é o coeficiente linear.
+
+Utilizamos a equação \ref{eq:reta} em um código Python para fazer o ajuste da
+reta com o método dos mínimos quadrados.
+Isso está descrito na seção \ref{sec:metodos}
+
+%Meu primeiro artigo em LaTeX
+
+\end{document}
