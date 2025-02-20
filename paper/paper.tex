@@ -4,14 +4,20 @@
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
 \usepackage[round,authoryear,sort]{natbib}
+%Se quiser, pode escolher outras fontes como:
+\usepackage{notomath} 
+%\uespackage{
 
+\newcommand{\Title}{Análise da variação de temperatura dos últimos cinco anos}
+
+\input{Paises.tex}
 %Corpo
 % Onde a gente escreve o texto
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-\title{Análise da variação de temperatura dos últimos cinco anos}
-\author{Eric Frota de Sousa}
+\title{\Title}
+\author{Eric Frota de Sousa, Speed, Esguicho}
 
 %Cria o título
 \maketitle
@@ -63,7 +69,8 @@ Isso está descrito na seção \ref{sec:metodos}.
 
 \section{Resultados}
 
-Analisamos os dados de 225 países. São muitos para listar aqui.
+Analisamos os dados de 225 países.
+Os países analisados foram: \Paises
 
 \begin{figure}
 %\begin{figure}[!htb]
@@ -78,7 +85,7 @@ Analisamos os dados de 225 países. São muitos para listar aqui.
 	\label{fig:variacao}
 \end{figure}
 
-Os resultados da análise de variação de termperatura estão na figura \ref{fig:variacao}
+Os resultados da análise de variação de termperatura estão na figura \ref{fig:variacao}.
 
 %Referências
 \bibliographystyle{apalike}

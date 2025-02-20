@@ -1,3 +1,6 @@
 # Nesse arquivo podemos listar coisas para o git ignorar
 
+paper/*pdf
+resultador/*
 dados
+figuras
