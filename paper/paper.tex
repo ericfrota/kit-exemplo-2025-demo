@@ -2,6 +2,7 @@
 
 %Vamos importar um pacote
 \usepackage[brazil]{babel}
+\usepackage{graphicx}
 
 %Corpo
 % Onde a gente escreve o texto
@@ -51,8 +52,24 @@ e $b$ é o coeficiente linear.
 
 Utilizamos a equação \ref{eq:reta} em um código Python para fazer o ajuste da
 reta com o método dos mínimos quadrados.
-Isso está descrito na seção \ref{sec:metodos}
+Isso está descrito na seção \ref{sec:metodos}.
 
 %Meu primeiro artigo em LaTeX
+
+\section{Resultados}
+
+Analisamos os dados de 225 países. São muitos para listar aqui.
+
+\begin{figure}
+	\includegraphics{../figuras/variacao_temperatura.png}
+	\caption{
+	Variação de temperatura média mensal dos últimos cinco anos.
+	a) Países com as cinco maiores variações de temperatura.
+	b) Países com as cinco menores variações de temperatrua.	
+	}
+	\label{fig:variacao}
+\end{figure}
+
+Os resultados da análise de variação de termperatur aestão na figura \ref{fig:variacao}
 
 \end{document}
