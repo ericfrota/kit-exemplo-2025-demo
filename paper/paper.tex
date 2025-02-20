@@ -3,6 +3,7 @@
 %Vamos importar um pacote
 \usepackage[brazil]{babel}
 \usepackage{graphicx}
+\usepackage[round,authoryear,sort]{natbib}
 
 %Corpo
 % Onde a gente escreve o texto
@@ -24,6 +25,10 @@ Isso vai ser a inha introdução.
 Outra frase.
 
 Esse já é outro parágrafo.
+
+Trabalhos anteriores bem legais fizeram coisas parecidas
+\citep{Hansen2010}.
+Isso foi analisado primeiro por \citet{Hansen2010}
 
 \section{Metodologia}
 \label{sec:metodos}
@@ -61,6 +66,9 @@ Isso está descrito na seção \ref{sec:metodos}.
 Analisamos os dados de 225 países. São muitos para listar aqui.
 
 \begin{figure}
+%\begin{figure}[!htb]
+	%\centering
+	%\includegraphics[width=0.5\columnwidth]{../figuras/variacao_temperatura.png}
 	\includegraphics{../figuras/variacao_temperatura.png}
 	\caption{
 	Variação de temperatura média mensal dos últimos cinco anos.
@@ -70,6 +78,10 @@ Analisamos os dados de 225 países. São muitos para listar aqui.
 	\label{fig:variacao}
 \end{figure}
 
-Os resultados da análise de variação de termperatur aestão na figura \ref{fig:variacao}
+Os resultados da análise de variação de termperatura estão na figura \ref{fig:variacao}
+
+%Referências
+\bibliographystyle{apalike}
+\bibliography{referencias.bib}
 
 \end{document}
